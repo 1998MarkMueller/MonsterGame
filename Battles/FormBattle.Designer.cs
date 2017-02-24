@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnOption1 = new System.Windows.Forms.Button();
             this.btnOption2 = new System.Windows.Forms.Button();
             this.btnOption3 = new System.Windows.Forms.Button();
@@ -44,7 +45,8 @@
             this.lstDialog = new System.Windows.Forms.ListBox();
             this.proYourHealth = new System.Windows.Forms.ProgressBar();
             this.proEnemyHealth = new System.Windows.Forms.ProgressBar();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picYourPokemon)).BeginInit();
             this.SuspendLayout();
@@ -62,7 +64,7 @@
             // 
             // btnOption2
             // 
-            this.btnOption2.Location = new System.Drawing.Point(359, 221);
+            this.btnOption2.Location = new System.Drawing.Point(348, 221);
             this.btnOption2.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.btnOption2.Name = "btnOption2";
             this.btnOption2.Size = new System.Drawing.Size(123, 25);
@@ -84,7 +86,7 @@
             // 
             // btnOption4
             // 
-            this.btnOption4.Location = new System.Drawing.Point(359, 252);
+            this.btnOption4.Location = new System.Drawing.Point(348, 252);
             this.btnOption4.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.btnOption4.Name = "btnOption4";
             this.btnOption4.Size = new System.Drawing.Size(123, 25);
@@ -214,16 +216,21 @@
             this.proEnemyHealth.Size = new System.Drawing.Size(96, 10);
             this.proEnemyHealth.TabIndex = 15;
             // 
-            // button1
+            // btnCancel
             // 
-            this.button1.Location = new System.Drawing.Point(325, 12);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 25);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Change Pokemon";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnCancel.Location = new System.Drawing.Point(471, 221);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(10, 54);
+            this.btnCancel.TabIndex = 16;
+            this.btnCancel.Text = "Run";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // BattleWindow
             // 
@@ -232,7 +239,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Battles.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(494, 286);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.proEnemyHealth);
             this.Controls.Add(this.proYourHealth);
             this.Controls.Add(this.lstDialog);
@@ -253,7 +260,9 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.Name = "BattleWindow";
-            this.Text = "Pokemon - Cool Edition";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Pokemon - Cool Edition - Beta 1.Something.69";
+            this.Activated += new System.EventHandler(this.BattleWindow_Activated);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.BattleWindow_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.picEnemyPokemon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picYourPokemon)).EndInit();
@@ -280,7 +289,8 @@
         private System.Windows.Forms.ListBox lstDialog;
         private System.Windows.Forms.ProgressBar proYourHealth;
         private System.Windows.Forms.ProgressBar proEnemyHealth;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

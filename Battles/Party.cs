@@ -8,7 +8,7 @@ namespace Battles
 {
     class Party
     {
-        public static MonsterStat[] yourParty = new MonsterStat[] { MonsterList.listOfPokemon[0] , MonsterList.listOfPokemon[1]};
+        public static MonsterStat[] yourParty = new MonsterStat[] { MonsterList.listOfPokemon[0] , MonsterList.listOfPokemon[1], MonsterList.listOfPokemon[2]};
         public static MonsterStat[] enemyParty = new MonsterStat[] { MonsterList.listOfPokemon[1] };
         public Party(MonsterList pok)
         {

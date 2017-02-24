@@ -93,6 +93,26 @@ namespace Battles.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap charmanderBack {
+            get {
+                object obj = ResourceManager.GetObject("charmanderBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap charmanderFront {
+            get {
+                object obj = ResourceManager.GetObject("charmanderFront", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap squirtleBack {
             get {
                 object obj = ResourceManager.GetObject("squirtleBack", resourceCulture);

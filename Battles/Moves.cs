@@ -8,6 +8,19 @@ namespace Battles
 {
     class Moves
     {
-        public static string[] moves = new string[] { "Flinch", "Vine Whip", "Leech Seed", "Tackle", "Bubble", "Water Gun"};
+        
+
+        Types moveType;
+        public string moveName;
+        int movePower;
+        bool canDoSpecial;
+
+        public Moves(Types _moveType, string _moveName, int _movePower, bool _canDoSpecial)
+        {
+            moveType = _moveType;
+            moveName = _moveName;
+            movePower = _movePower;
+            canDoSpecial = _canDoSpecial;
+        }
     }
 }

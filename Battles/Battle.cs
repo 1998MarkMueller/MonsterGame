@@ -21,8 +21,8 @@ namespace Battles
         public static int yourPokmeonHP = yourPokemon.currHP;
         public static int yourPokemonMaxHP = yourPokemon.maxHP;
         public static System.Drawing.Bitmap yourPokemonImage = yourPokemon.imgB;
-        public static string[] yourPokemonType = yourPokemon.type;
-        public static string[] yourPokemonMoves = yourPokemon.move;
+        public static Types[] yourPokemonType = yourPokemon.type;
+        public static Moves[] yourPokemonMoves = yourPokemon.move;
 
         //////////////////////////////////////////////////////////////////////////////
 
@@ -37,8 +37,8 @@ namespace Battles
         public static int enemyPokmeonHP = enemyPokemon.currHP;
         public static int enemyPokemonMaxHP = enemyPokemon.maxHP;
         public static System.Drawing.Bitmap enemyPokemonImage = enemyPokemon.imgF;
-        public static string[] enemyPokemonType = enemyPokemon.type;
-        public static string[] enemyPokemonMoves = enemyPokemon.move;
+        public static Types[] enemyPokemonType = enemyPokemon.type;
+        public static Moves[] enemyPokemonMoves = enemyPokemon.move;
 
         //////////////////////////////////////////////////////////////////////////////
 

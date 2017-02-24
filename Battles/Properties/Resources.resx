@@ -133,4 +133,10 @@
   <data name="squirtleFront" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\squirtleFront.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="charmanderBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\charmanderBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="charmanderFront" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\charmanderFront.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

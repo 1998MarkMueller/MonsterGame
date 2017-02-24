@@ -15,13 +15,13 @@ namespace Battles
         public int maxHP, currHP;
         public int exp;
         public int speed;
-        public string[] type;
-        public string[] move;
+        public Types[] type;
+        public Moves[] move;
         public string region;
         public System.Drawing.Bitmap imgF;
         public System.Drawing.Bitmap imgB;
 
-        public MonsterStat(int _ID, string _name, bool _isMale, int _lvl, int _maxHP, int _currHP, int _exp, int _speed, string[] _type, string[] _move, string _region, System.Drawing.Bitmap _imgF, System.Drawing.Bitmap _imgB)
+        public MonsterStat(int _ID, string _name, bool _isMale, int _lvl, int _maxHP, int _currHP, int _exp, int _speed, Types[] _type, Moves[] _move, string _region, System.Drawing.Bitmap _imgF, System.Drawing.Bitmap _imgB)
         {
             ID = _ID;
             name = _name;
